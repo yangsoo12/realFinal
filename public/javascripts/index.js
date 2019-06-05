@@ -92,7 +92,7 @@ if(obj.params.pm10>150){
          
       pm10Data.push(obj.params.pm10);
       pm25Data.push(obj.params.pm2);
-      rpmData.push(obj.params.rpm);
+      //rpmData.push(obj.params.rpm);
      
     
      
