@@ -2,18 +2,14 @@
 $(document).ready(function () {
   pm2Data = [],
   pm10Data = [];
- 
   var pm10Data = [],
       pm25Data = [];
   var result;
-
   var pm10length = pm10Data.length;
-  var pm25length = pm25Data.length;
-
-   
+  var pm25length = pm25Data.length;  
    document.getElementById("pm2").innerHTML = "20";
    document.getElementById("pm10").innerHTML = "50";
-
+/*
   var ws = new WebSocket('wss://' + location.host);
   ws.onopen = function () {
     console.log('Successfully connect WebSocket');
@@ -27,7 +23,7 @@ $(document).ready(function () {
       }
 	  
       document.getElementById("pm2").innerHTML = obj.params.pm2;
-  	  document.getElementById("pm10").innerHTML = obj.params.pm10;
+      document.getElementById("pm10").innerHTML = obj.params.pm10;
 		if(obj.params.Temperature)
 		{
 		  timeData.push(timeS);
@@ -62,7 +58,8 @@ $(document).ready(function () {
 	  if (pm2Data.length > maxLen)
 	  {
 		  pm2Data.shift();
-	  }
+	  }*/
+	  /*
 	 if(obj.params.pm2>100){
   document.getElementById("p2g5").innerHTML = "아주나쁨";
 }else if(obj.params.pm2>50){
@@ -87,7 +84,8 @@ if(obj.params.pm10>150){
 	document.getElementById("tempg7").innerHTML = "쾌적";
 }else if(obj.params.Temperature>0){
 	document.getElementById("tempg7").innerHTML = "낮음";
-}
+}*/ 
+	    /*
       myLineChart.update();
          
       pm10Data.push(obj.params.pm10);
@@ -96,12 +94,12 @@ if(obj.params.pm10>150){
      
     
      
-         
-      
+       */  
+     /* 
       
     } catch (err) {
       console.error(err);
     }
-  }
+  }*/
 	
 });
